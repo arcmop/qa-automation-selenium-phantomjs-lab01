@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <input id="txt01" size="5" /> + <input id="txt02" size="5" /> <button id="btnsum" onclick="sumar();">+</button> <input id="txtresult" readonly size="5" /> 
+        <script>
+            function sumar() {
+                var sum01 = parseInt(document.getElementById("txt01").value);
+                var sum02 = parseInt(document.getElementById("txt02").value);
+                //var sum01 = document.getElementById("txt01").value;
+                //var sum02 = document.getElementById("txt02").value;
+                document.getElementById("txtresult").value = sum01 + sum02;
+            }
+        </script>    
+    </body>
+</html>
